@@ -1,7 +1,7 @@
 import React from 'react'
 import Videogame from '../mask/mask'
 import {Link} from 'react-router-dom';
-
+import Footer from '../footer/footer'
 
 function masks() {
 
@@ -18,7 +18,7 @@ function masks() {
     }
 
     return (
-        
+        <>
         <div className="Cards">
             <h2 className="titleCategory">PSN</h2>
            {
@@ -28,7 +28,10 @@ function masks() {
                     </Link>    
                 ))
             }
+             
         </div>
+        <Footer/>
+           </>
     )
 }
 

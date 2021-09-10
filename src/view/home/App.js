@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route,Switch} from "react-router-dom";
 import Playstation from '../../view/categories/Playstation'
 import Xbox from '../../view/categories/Xbox'
 import Nintendo from '../../view/categories/Nintendo'
-import PageNotFound from "../../view/PageNotFound"
 import Homepage from '../../view/categories/Homepage'
 import Gamepage from '../../components/gamepage/gamepage';
+import CarShop from '../../components/cart/cart'
 
 function App() {
   return (
@@ -20,17 +20,20 @@ function App() {
           <Playstation />
         </Route>
         <Route exact path="/xbox" >
-          <Xbox />
+          {/* <Xbox /> */}
+          <Playstation />
+        </Route>
+        <Route exact path="/carshop" >
+          <CarShop />
         </Route>
         <Route exact path="/nintendo" >
-          <Nintendo />
+          {/* <Nintendo /> */}
+          <Playstation />
         </Route>
         <Route exact path="/playstation/:id">
           <Gamepage/>
         </Route>
-        <Route path="*">
-          <PageNotFound/>
-        </Route>
+    
       </Switch>
     </div>
   </Router>
