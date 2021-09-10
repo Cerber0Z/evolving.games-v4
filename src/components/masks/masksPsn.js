@@ -6,7 +6,7 @@ import Footer from '../footer/footer'
 function masks() {
 
     const [videojuegos, setVideojuegos] = React.useState([]);
-
+    const [carrito, setCarrito] = React.useState([]);
     React.useEffect(() => {
        obtenerDatos()
     }, [])
@@ -24,7 +24,7 @@ function masks() {
            {
                 videojuegos.map(videojuegos => (  
                     <Link className="a-img" key={videojuegos._id} to={`/playstation/${videojuegos._id}`}>
-                        <Videogame key={videojuegos._id} props={videojuegos}/>
+                        <Videogame carrito={carrito} setCarrito={setCarrito} key={videojuegos._id} props={videojuegos}/>
                     </Link>    
                 ))
             }

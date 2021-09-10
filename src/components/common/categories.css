@@ -34,4 +34,12 @@
     .icon-category{
         margin-top: 5px;
     }
+    .btn-car{
+        position: fixed;
+        bottom: 38%;
+        margin-left: 73%;
+    }
+    .img-carshop{
+        width: 100px;
+    }
 }

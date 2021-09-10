@@ -3,12 +3,18 @@ import { useParams } from 'react-router'
 import Header from '../../components/common/header'
 import './gamepage.css'
 import Categories from '../../components/common/categories'
+import BtnShop from '../../components/common/boton-car'
 import {Button} from 'reactstrap';
+
+
 const Gamepage = () => {
 
     const {id} =  useParams()
    
     const [videogame, setVideogame] = React.useState([]);
+    const [carrito, setCarrito] = React.useState([]);
+
+    console.log(carrito)
 
     React.useEffect(() => {
         const obtenerDatos = async () => {
@@ -18,7 +24,7 @@ const Gamepage = () => {
          }
          obtenerDatos()
     }, [id])
-
+    
     return (
         <>
         <Header />
@@ -33,7 +39,7 @@ const Gamepage = () => {
                         <h6 className="developers">{videogame.developers}</h6>
                         <h2 className="precio">${videogame.price},00</h2>
                     </div>
-                    <Button className="btn-añadir" id="btn-añadir" >Añadir</Button> 
+                    <Button onClick={() => addVideogame(videogame._id)} className="btn-añadir" id="btn-añadir" >Añadir</Button> 
                 </div>
 
                 <div className="card-caratula">
@@ -44,7 +50,7 @@ const Gamepage = () => {
                     <p className="description-text">{videogame.description}</p> 
                 </div>
                
-
+                <BtnShop/>
             </div>
             
         </>
@@ -52,3 +58,4 @@ const Gamepage = () => {
 }
 
 export default Gamepage
+
