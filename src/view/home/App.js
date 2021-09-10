@@ -6,7 +6,7 @@ import Xbox from '../../view/categories/Xbox'
 import Nintendo from '../../view/categories/Nintendo'
 import Homepage from '../../view/categories/Homepage'
 import Gamepage from '../../components/gamepage/gamepage';
-import CarShop from '../../components/cart/cart'
+import CarShop from '../../components/Carrito/carrito'
 
 function App() {
   return (

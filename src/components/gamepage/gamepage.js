@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import Header from '../../components/common/header'
 import './gamepage.css'
 import Categories from '../../components/common/categories'
+import Carrito from '../Carrito/carrito'
 import BtnShop from '../../components/common/boton-car'
 import {Button} from 'reactstrap';
 
@@ -50,7 +51,7 @@ const Gamepage = () => {
                     <p className="description-text">{videogame.description}</p> 
                 </div>
                
-                <BtnShop/>
+                <Carrito/>
             </div>
             
         </>
