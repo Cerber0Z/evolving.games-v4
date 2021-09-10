@@ -1,0 +1,49 @@
+.App-title {
+
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #888888;
+    margin-left: -45%;
+    margin-bottom: 20px;
+
+}
+.App {
+    text-align: center;
+  }
+h1 {color: black;}
+
+.App-hr{
+  width: 350px;
+  border: 1.5px solid #afafaf;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.App-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.secundario{
+  text-align: center;
+}
+
+.img-logo{
+  width: 280px;
+  text-align: center;
+  margin-left: -60px;
+}
+
+@media (width: 414px){
+  .img-logo {
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+}
+}

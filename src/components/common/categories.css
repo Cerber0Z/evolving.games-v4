@@ -1,0 +1,37 @@
+.categories-div{
+    border: 1px solid #CBCBCB;
+    width: 5.5%;
+    height: 90px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.categories{
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    margin-top: -7.2%;
+}
+
+.icon-category{
+    margin-top: 14px;
+}
+
+@media (width: 414px){
+    .categories-div{
+        border: 1px solid #CBCBCB;
+        padding: 2%;
+        width: 23.5%;
+        height: 90px;
+        margin-left: 30px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    .categories{
+        margin-left: -30px;
+    }
+    .icon-category{
+        margin-top: 5px;
+    }
+}
